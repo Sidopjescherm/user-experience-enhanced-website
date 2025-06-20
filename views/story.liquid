@@ -7,7 +7,9 @@
     style="view-transition-name: morph-{{ story.image }}"
     src="https://fdnd-agency.directus.app/assets//{{ story.image }}"
     width="{{ story.image.width }}"
-    height="{{ story.image.height }}">
+    height="{{ story.image.height }}"
+    alt="{{ story.title }}"
+    loading="lazy">
 
   <article>
     <h2>{{ story.summary }}</h2>
